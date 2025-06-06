@@ -15,7 +15,6 @@ export class Video {
     this.url = url;
     this.channelId = channelId;
     this.uploadDate = new Date();
-    this.save()
   }
 
   async save() {
