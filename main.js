@@ -1,8 +1,6 @@
 // main.js
 import { Video } from './video.js';
-import dotenv from 'dotenv';
 
-dotenv.config(); // Carrega variáveis de ambiente do .env, se houver
 
 async function main() {
   try {
@@ -16,7 +14,8 @@ async function main() {
     
     newVideo.save()
 
-    let busca = 'arroz'
+
+    let busca = 'Arroz'
     console.log(`\n--- Buscando vídeos com a palavra "${busca}"`);
     const resultados = await Video.findByKeyword(busca);
     console.log('Vídeos encontrados:', resultados);
